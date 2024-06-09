@@ -89,7 +89,7 @@ setTimeout(()=>{
 
   return (
    <>
-   {/* like this I can pass the props and do changes in the component element  */}
+   {/* like this We can pass the props and do changes in the component element  */}
    {/* <Navbar  titleHead = "ANJALI"  title = "Anjali Gupta" />  */}
    <Navbar mode={mode} toggleMode ={toggleMode}  toggleModes = {toggleModes}/>
    <Alert alert={alert}/>
