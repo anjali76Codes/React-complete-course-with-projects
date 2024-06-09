@@ -53,9 +53,12 @@ const handleOnChange = (event) => {
 
 
 
-// 6. Total Words and Characters Logic
-// Total words: {text.split(' ').length}
-// Total characters: {text.length}
+Logics ::
+ to calculate the total words -->
+{text.split(' ').length}
+
+to calculate the total no . of characters -->
+ {text.length}
 
 
 
