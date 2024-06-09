@@ -68,10 +68,11 @@ const boldText = ()=>{
 
     return (
     <>
-       <div className="container" style={{ color:props.mode === 'dark' ? 'white' : 'brown' }}>
+       <div className="container" >
       <h1 >{props.heading}</h1>
         <div className="mb-3">
-          <textarea  style={{  color: props.mode === 'dark' ? 'white' : 'brown' , backgroundColor: props.mode === 'dark' ? 'grey' : 'light' , fontWeight: bold ? 'bold' : 'normal' }} 
+
+          <textarea  style={{  backgroundColor: props.mode === 'dark' ? 'grey' : 'light' , fontWeight: bold ? 'bold' : 'normal'  }} 
           
           
             className="form-control" 
@@ -80,6 +81,8 @@ const boldText = ()=>{
             id="textarea" 
             rows="8" >
             </textarea>
+
+
         </div>
         <button className="btn btn-primary m-3" onClick={convertUppercase}>
           Convert to Uppercase
@@ -96,7 +99,9 @@ const boldText = ()=>{
         </button>
       </div>
 
-      <div className="container m-3" style={{ color: props.mode === 'dark'? 'white' : 'brown' }}>
+
+
+      <div className="container m-3" >
         <h2>Your Text Summary</h2>
         <p>{text.split(' ').length} words and {text.length} characters</p>
         <p>{0.008 * text.split(' ').length} Minutes to read</p>

@@ -35,7 +35,7 @@ setTimeout(()=>{
     
     else {
       setMode('light');
-      document.body.style.backgroundColor = 'white';
+      document.body.style.backgroundColor = 'white'
       showAlert("light mode has been enabled", "success ")
 
 
@@ -44,18 +44,59 @@ setTimeout(()=>{
 
 
 
+
+  const toggleModes = (mode) => {
+    setMode(mode);
+    let backgroundColor;
+    let message;
+
+    switch (mode) {
+      case 'dark':
+        backgroundColor = '#0f053c'
+        message = 'Dark mode has been enabled'
+        document.body.style.color = 'white'
+        break;
+      case 'light':
+        backgroundColor = 'white'
+        message = 'Light mode has been enabled'
+        document.body.style.color = 'black'
+
+        break;
+      case 'light blue':
+        backgroundColor = '#c6fcff'
+        message = 'Light blue mode has been enabled'
+        document.body.style.color = 'purple'
+
+        break;
+      default:
+
+        backgroundColor = 'white'
+        message = 'Light mode has been enabled'
+        document.body.style.color = 'black'
+
+    }
+
+
+    // this set the color as a whole background color
+    document.body.style.backgroundColor = backgroundColor
+    showAlert(message, 'success')
+
+  }
+
+
+
+
+
   return (
    <>
    {/* like this I can pass the props and do changes in the component element  */}
    {/* <Navbar  titleHead = "ANJALI"  title = "Anjali Gupta" />  */}
-   <Navbar mode={mode} toggleMode ={toggleMode}/>
+   <Navbar mode={mode} toggleMode ={toggleMode}  toggleModes = {toggleModes}/>
    <Alert alert={alert}/>
    <div className="container my-3 " >
    {/* <About/> */}
    <Form     showAlert={showAlert} heading= "Enter the text to analyze"/>
    </div>
-
-   
 
    </>
   )
