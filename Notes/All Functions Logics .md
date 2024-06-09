@@ -92,10 +92,7 @@ const enableDarkMode = () => {
 
 
 
-<<<<<<< HEAD:Notes/All Functions Logics .md
-9. Enables modes selection :
-=======
->>>>>>> 75c74b368d7c6cdd3a8edbb5008392da6f2c0056:Notes/All Functions Logics copy.md
+
 
 // 9. Toggle Modes Selection
 const toggleModes = (mode) => {
