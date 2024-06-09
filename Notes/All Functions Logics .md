@@ -92,7 +92,7 @@ const  enableDarkMode = ()=>{
 
 
 
-9. Enable modes selection :
+9. Enables modes selection :
 
 const toggleModes = (mode) => {
     setMode(mode);
