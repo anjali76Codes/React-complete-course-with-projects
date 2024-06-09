@@ -2,7 +2,7 @@ Props are used to pass data and functions from one component to another.
 
 In the JSX file, we can use   * props.something*     to access the data or functions passed down from the parent component.
 
- this is a method to give the style in the html
+ this is a method to give a style in the html
   
 style={{ color:props.mode === 'dark' ? 'white' : 'brown' }}
 
