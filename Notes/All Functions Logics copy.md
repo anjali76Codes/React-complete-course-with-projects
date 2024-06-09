@@ -4,6 +4,8 @@ let [text , setText] = useState(" ");
 const [bold , setBold] = useState(false);
 const [btnText , setBtnText] =  useState('Enable Light Mode');
 
+
+
 // Functions
 
 // 1. Convert to Uppercase
@@ -13,6 +15,8 @@ const convertUppercase = (event) => {
   props.showAlert("Converted to Uppercase !", "success");
 };
 
+
+
 // 2. Convert to Lowercase
 const convertLowercase = () => {
   console.log("Lowercase btn clicked");
@@ -21,6 +25,9 @@ const convertLowercase = () => {
   props.showAlert("Converted to lowercase !", "success");
 };
 
+
+
+
 // 3. Clear All
 const clearAll = () => {
   let clearText = "";
@@ -28,10 +35,15 @@ const clearAll = () => {
   props.showAlert("Cleared All text !", "success");
 };
 
+
+
 // 4. Toggle Bold Text
 const boldText = () => {
   setBold(!bold);
 };
+
+
+
 
 // 5. Handle Input Change
 const handleOnChange = (event) => {
@@ -39,15 +51,23 @@ const handleOnChange = (event) => {
   setText(event.target.value);
 };
 
+
+
 // 6. Total Words and Characters Logic
 // Total words: {text.split(' ').length}
 // Total characters: {text.length}
+
+
+
 
 // 7. Capitalize First Letter
 const capitalize = (word) => {
   const lower = word.toLowerCase();
   return lower.charAt(0).toUpperCase() + lower.slice(1);
 };
+
+
+
 
 // 8. Enable Dark or Light Mode
 const enableDarkMode = () => {
@@ -65,6 +85,10 @@ const enableDarkMode = () => {
     setBtnText("Enable Light Mode");
   }
 };
+
+
+
+
 
 // 9. Toggle Modes Selection
 const toggleModes = (mode) => {
@@ -97,6 +121,10 @@ const toggleModes = (mode) => {
   document.body.style.backgroundColor = backgroundColor;
   showAlert(message, 'success');
 };
+
+
+
+
 
 // 10. Alert with Timeout
 const showAlert = (message, type) => {
