@@ -12,6 +12,7 @@ const [btnText , setBtnText] =  useState('Enable Light Mode');
 const convertUppercase = (event) => {
   console.log("Uppercase btn clicked", text);
   let newText = text.toUpperCase();
+  setText(newText);
   props.showAlert("Converted to Uppercase !", "success");
 };
 
@@ -21,7 +22,7 @@ const convertUppercase = (event) => {
 const convertLowercase = () => {
   console.log("Lowercase btn clicked");
   let newText = text.toLowerCase();
-  setText(newText);
+
   props.showAlert("Converted to lowercase !", "success");
 };
 
