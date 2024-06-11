@@ -33,7 +33,7 @@ Hooks are defined using JavaScript functions, but they represent a special type 
    - Don’t call Hooks inside loops, conditions, nested functions, or try/catch/finally blocks. Instead, always use Hooks at the top level of your React function, before any early returns.
    
 2. **Only call Hooks from React functions:**
-   - We can only call Hooks while React is rendering a function component.
+   - You can only call Hooks while React is rendering a function component.
 
 ### Functions whose names start with `use` are called Hooks in React.
 

@@ -72,9 +72,7 @@ const boldText = ()=>{
       <h1 >{props.heading}</h1>
         <div className="mb-3">
 
-          <textarea  style={{  backgroundColor: props.mode === 'dark' ? 'grey' : 'light' , fontWeight: bold ? 'bold' : 'normal'  }} 
-          
-          
+          <textarea  style={{  backgroundColor: props.mode === 'dark' ? '#0f053c' : 'light' , fontWeight: bold ? 'bold' : 'normal' , color: props.mode==='light' ? 'purple' :  'magenta' ,fontSize: '20px' ,fontFamily: 'cursive' }} 
             className="form-control" 
             value={text} 
             onChange={handleOnChange} 
@@ -84,17 +82,17 @@ const boldText = ()=>{
 
 
         </div>
-        <button className="btn btn-primary m-3" onClick={convertUppercase}>
+        <button  disabled= {text.length ===0} className="btn btn-primary mx-1 my-1" onClick={convertUppercase}>
           Convert to Uppercase
         </button>
-        <button className="btn btn-primary m-2" onClick={convertLowercase}>
+        <button  disabled= {text.length ===0} className="btn btn-primary mx-1 my-1" onClick={convertLowercase}>
           Convert to Lowercase
         </button>
-        <button className="btn btn-primary m-2" onClick={clearAll}>
+        <button  disabled= {text.length ===0} className="btn btn-primary mx-1 my-1" onClick={clearAll}>
           Clear All
         </button>
 
-        <button className="btn btn-primary m-2" onClick={boldText}>
+        <button  disabled= {text.length ===0} className="btn btn-primary mx-1 my-1" onClick={boldText}>
          {bold ? 'UnBold' : 'Bold'}
         </button>
       </div>
@@ -103,10 +101,10 @@ const boldText = ()=>{
 
       <div className="container m-3" >
         <h2>Your Text Summary</h2>
-        <p>{text.split(' ').length} words and {text.length} characters</p>
-        <p>{0.008 * text.split(' ').length} Minutes to read</p>
+        <p>{text.split(' ').filter((element)=>{return element.length !== 0}).length} words and {text.length} characters</p>
+        <p>{0.008 * text.split(' ').filter((element)=>{return element.length !== 0}).length} Minutes to read</p>
         <h2>Preview</h2>
-        <p  style={{ fontWeight: bold ? 'bold' : 'normal' }}>{text} </p>
+        <p  style={{ fontWeight: bold ? 'bold' : 'normal' ,  color: props.mode==='light' ? 'purple' :  'magenta' ,fontSize: '20px' ,fontFamily: 'cursive' }}>{text} </p>
       </div>
     </>
   );

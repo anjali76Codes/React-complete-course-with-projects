@@ -27,3 +27,12 @@ Bootstrap is a popular CSS framework that helps you design responsive web pages 
 
 **Reference:** [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
+
+
+**Reference:** [Deployment of react app] (https://create-react-app.dev/docs/deployment/)
+
+
+**Reference:** [Router documentation] (https://v5.reactrouter.com/web/guides/quick-start)
+
+
+
