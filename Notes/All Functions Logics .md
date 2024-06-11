@@ -22,7 +22,7 @@ const convertUppercase = (event) => {
 const convertLowercase = () => {
   console.log("Lowercase btn clicked");
   let newText = text.toLowerCase();
-
+  setText(newText);
   props.showAlert("Converted to lowercase !", "success");
 };
 
