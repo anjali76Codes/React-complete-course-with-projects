@@ -1,0 +1,13 @@
+three main reasons to used react :
+1. declarative  programming  - Once we set then update automatics 
+
+when we use  ->  vanilla Js - pure Js then we are use imperative programming that means we need to explain everything 
+
+
+
+2. Component based Architecture 
+by making on Component we can use that many times by modifying or changing the value so hence  it is easy to rendering where html don't
+
+
+
+3. Single page Application
