@@ -1,14 +1,14 @@
 React useState Hook
-The useState hook is a feature in React that allows you to add state to function components. This guide will explain how to use the useState hook to manage state in your React components.
+The useState hook is a feature in React that allows us to add state to function components. This guide will explain how to use the useState hook to manage state in our React components.
 
 Importing useState
-To use the useState hook, you first need to import it from the React library:
+To use the useState hook, we first need to import it from the React library:
 
 
 
 import { useState } from "react";
 Initializing useState
-You initialize state by calling the useState function and passing the initial state as an argument. The function returns an array with two elements: the current state value and a function to update that state.
+We initialize state by calling the useState function and passing the initial state as an argument. The function returns an array with two elements: the current state value and a function to update that state.
 
 
 

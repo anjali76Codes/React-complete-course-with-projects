@@ -4,9 +4,9 @@ Hooks were introduced in React version 16.8, allowing you to use state and other
 Key Points to Keep in Mind When Using Hooks
 Importing Hooks:
 
+
 Hooks must be imported from the react package.
-javascript
-Copy code
+
 import React, { useState, useEffect } from 'react';
 Usage Restrictions:
 
@@ -20,9 +20,10 @@ Example of Using Hooks
 Functional Component with Hooks
 Here’s an example of a functional component using the useState and useEffect hooks:
 
-javascript
-Copy code
+
 import React, { useState, useEffect } from 'react';
+
+
 
 const Blogs = () => {
   // Using useState hook to create state variables
@@ -58,11 +59,14 @@ const Blogs = () => {
 };
 
 export default Blogs;
+
+
 Rules to Remember
 Only Call Hooks at the Top Level: Do not call hooks inside loops, conditions, or nested functions.
 
-javascript
-Copy code
+
+
+
 const Blogs = () => {
   const [count, setCount] = useState(0); // Valid use
 
@@ -72,10 +76,14 @@ const Blogs = () => {
 
   return <h1>Blogs</h1>;
 };
+
+
+
 Only Call Hooks from React Functions: Hooks can be called from React function components or custom hooks.
 
-javascript
-Copy code
+
+
+
 // Custom hook example
 const useCustomHook = () => {
   const [state, setState] = useState(initialState);
@@ -87,6 +95,9 @@ const Blogs = () => {
   const [blogs, setBlogs] = useCustomHook();
   return <h1>Blogs</h1>;
 };
+
+
+
 By adhering to these rules and guidelines, you can effectively use hooks to manage state and side effects in your React applications without the need for class components.
 
 
